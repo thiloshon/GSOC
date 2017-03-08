@@ -1,0 +1,21 @@
+{
+    "collab_server" : "",
+    "contents" : "library(rgbif)\ntaxonKey<-name_suggest(\"Perameles nasuta\")\nkey<-taxonKey$key[1]\ndata<-occ_search(key)\ndata<- data$data\n\ncolnames(data) <- tolower(colnames(data))\n\ntidyData <- as.data.frame(data)\ntidyData <- add_flags(tidyData)\n\ntidyData\n\n# colname <- colnames(data)\n# \n# colname[which(colname==\"decimalLatitude\")] = \"decimallatitude\"\n# colname[which(colname==\"decimalLongitude\")] = \"decimallongitude\"\n# colname[which(colname==\"countryCode\")] = \"countrycode\"\n# colname[which(colname==\"scientificName\")] = \"scientificname\"",
+    "created" : 1488982520581.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "4142113314",
+    "id" : "D0DA1D8D",
+    "lastKnownWriteTime" : 1488996682,
+    "last_content_update" : 1488996682683,
+    "path" : "C:/Users/Thiloshon/RProjects/GSOC/easy01 Part01.R",
+    "project_path" : "easy01 Part01.R",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

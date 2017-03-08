@@ -1,0 +1,21 @@
+{
+    "collab_server" : "",
+    "contents" : "library(rgbif)\nlibrary(rgeospatialquality)\ndata <- read.csv(\"0067842-160910150852091/0067842-160910150852091.csv\", header = TRUE, sep = \"\\t\")\ndata <- data[1:500,]\nflaggedData <- add_flags(data)\n\n\n\n\n\n\n\n#GBIF.org (8th March 2017) GBIF Occurrence Download http://doi.org/10.15468/dl.autmra\n#QUERY\n#Taxon\tPerameles nasuta\n",
+    "created" : 1488985545285.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1297706473",
+    "id" : "51183FEF",
+    "lastKnownWriteTime" : 1488996684,
+    "last_content_update" : 1488996684118,
+    "path" : "C:/Users/Thiloshon/RProjects/GSOC/easy01 Part02.R",
+    "project_path" : "easy01 Part02.R",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 3,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
