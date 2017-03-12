@@ -1,0 +1,64 @@
+---
+title: "Hard Test Tasks"
+author: "Thiloshon Nagarajah"
+date: "March 11, 2017"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Hard 01: Building packages for inexperienced R users
+
+Building packages for inexperienced R users mainly depends on the
+experience the user has. 
+if he has used R before then it’s mainly about having a proper documentation.
+In that case following the proper practices of building packages would help a lot. 
+
+* The vignettes should thoroughly cover all the functions and data. 
+* It should be well documented with sample usage codes. 
+* Fitting and simple names should be given to functions. 
+* Parameters could be less in number with defining default values as much as possible. 
+
+If the user has never used R before, then it makes sense to abstract all the 
+implementation and give user only what he wants to see. in that case a GUI 
+application doing what he wants to do would be handy.
+
+* Desktop Applications can be made with `gWidgets` and 
+* web applications can be made with `shiny`.
+
+
+## Hard 02: Managing DwC data in R
+
+The DwC data is a massive volume of data of organisms mainly categorized 
+into 7 main subsets and two more complex subsets. The data can be retrieved 
+from `GBIF` but the problem lies in the volume of data. As of today, there are 
+`716428135` occurrence records and each record has around 111 fields. In order to store 
+the data in R and manage or process we need to think of few feasible methods. 
+
+First of the DwC covers all aspects of the organism to suit the needs of all researchers. 
+But most of the time for any specific need the number of fields required will be very
+less than that in the original data. So only the fields required for the task should
+be loaded onto the R. This would increase the performance. 
+
+And while reading in the data, first a small subset of data should be loaded and classes
+of each fields should be identified. Then, after assigning the classes of data to
+read function, the retrieval can be done faster. 
+
+Another way of managing DwC data efficiently is to manage it through databases. The data 
+can be stored in databases and by indexing the values, the data can be aggregated and 
+retrieved as per need or request in real time much faster. This would definitely increase 
+the efficiency. If the Data is Huge it makes sense to use concepts like `Hadoop` too.
+
+If we take the DwC concept into account, few things should be taken in acoount
+
+* the standard promises it will have growth (new terms, additional meanings). So the 
+    data we store in R or mange should also be possible to be expanded and merged with new datasets.
+* Data quality and fitness for use are primary concerns in the biodiversity community. So 
+    the data in R should undergo an extended pipeline of data cleaning and standardization to 
+    make sure the data can be used effectively and for longer periods. 
+
+
+
+

@@ -1,0 +1,38 @@
+---
+title: "Hard 02"
+author: "Thiloshon Nagarajah"
+date: "March 12, 2017"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Managing DwC data in R
+
+The DwC data is a massive volume of data of organisms mainly categorized 
+into 7 main subsets and two more complex subsets. The data can be retrieved 
+from `GBIF` but the problem lies in the volume of data. As of today, there are 
+`716428135` occurrence records and each record has around 111 fields. In order to store 
+the data in R and manage or process we need to think of few feasible methods. 
+
+First of the DwC covers all aspects of the organism to suit the needs of all researchers. 
+But most of the time for any specific need the number of fields required will be very
+less than that in the original data. So only the fields required for the task should
+be loaded onto the R. This would increase the performance. 
+
+And while reading in the data, first a small subset of data should be loaded and classes
+of each fields should be identified. Then, after assigning the classes of data to
+read function, the retrieval can be done faster. 
+
+Another way of managing DwC data efficiently is to manage it through databases. The data 
+can be stored in databases and by indexing the values, the data can be aggregated and 
+retrieved as per need or request in real time much faster. This would definitely increase 
+the efficiency. If the Data is Huge it makes sense to use concepts like `Hadoop` too.
+
+
+
+
+
+
