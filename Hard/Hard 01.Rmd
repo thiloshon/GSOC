@@ -54,7 +54,7 @@ the efficiency. If the Data is Huge it makes sense to use concepts like `Hadoop`
 If we take the DwC concept into account, few things should be taken in acoount
 
 * the standard promises it will have growth (new terms, additional meanings). So the 
-    data we store in R or mange should also be possible to be expanded and merged with new datasets.
+    data we store in R or manage should also be possible to be expanded and merged with new datasets.
 * Data quality and fitness for use are primary concerns in the biodiversity community. So 
     the data in R should undergo an extended pipeline of data cleaning and standardization to 
     make sure the data can be used effectively and for longer periods. 
